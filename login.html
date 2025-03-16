@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nepla - Login</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Nepla</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li>
+            <a href="#" id="cart-toggle"
+              >Cart (<span id="cart-count">0</span>)</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="form-container slide-in">
+      <h2>Welcome Back</h2>
+      <form id="login-form">
+        <label for="email">Email</label>
+        <input type="email" id="email" required />
+        <span class="error" id="email-error">Please enter a valid email.</span>
+        <label for="password">Password</label>
+        <input type="password" id="password" required />
+        <span class="error" id="password-error">Password is incorrect.</span>
+        <button type="submit">Login</button>
+      </form>
+      <p style="text-align: center; margin-top: 1rem">
+        New here? <a href="signup.html">Sign up</a>
+      </p>
+    </div>
+
+    <footer>
+      <p>© 2025 Nepla. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

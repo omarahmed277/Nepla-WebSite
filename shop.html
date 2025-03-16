@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nepla - Shop</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Nepla</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><span id="user-profile" style="display: none"></span></li>
+          <li>
+            <a href="#" id="cart-toggle"
+              >Cart (<span id="cart-count">0</span>)</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="products slide-in">
+      <h2>Browse Our Collection</h2>
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search products..." />
+      </div>
+      <div class="product-grid">
+        <div
+          class="product-item"
+          data-name="Vintage Jacket"
+          data-category="mens"
+        >
+          <img src="https://via.placeholder.com/280" alt="Jacket" />
+          <h3>Vintage Jacket</h3>
+          <p>Gently used, Size M</p>
+          <p>$20</p>
+          <button
+            class="add-to-cart"
+            data-name="Vintage Jacket"
+            data-price="20"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div
+          class="product-item"
+          data-name="Graphic T-Shirt"
+          data-category="womens"
+        >
+          <img src="https://via.placeholder.com/280" alt="T-Shirt" />
+          <h3>Graphic T-Shirt</h3>
+          <p>Like new, Size S</p>
+          <p>$10</p>
+          <button
+            class="add-to-cart"
+            data-name="Graphic T-Shirt"
+            data-price="10"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div
+          class="product-item"
+          data-name="Wool Scarf"
+          data-category="accessories"
+        >
+          <img src="https://via.placeholder.com/280" alt="Scarf" />
+          <h3>Wool Scarf</h3>
+          <p>Excellent condition</p>
+          <p>$8</p>
+          <button class="add-to-cart" data-name="Wool Scarf" data-price="8">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div id="cart-modal" class="modal">
+      <div class="modal-content slide-in">
+        <span id="close-modal" class="close">×</span>
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total">0</span></p>
+        <button id="checkout-btn">Proceed to Checkout</button>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2025 Nepla. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
